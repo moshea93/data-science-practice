@@ -74,7 +74,7 @@ def single_variable_linear_regression(textfile):
 
 	fig, ax = plt.subplots(figsize=(12,8))  
 	ax.plot(x, f, 'r', label='Prediction')  
-	ax.scatter(data.Population, data.Profit, label='Traning Data')  
+	ax.scatter(data.Population, data.Profit, label='Training Data')  
 	ax.legend(loc=2)  
 	ax.set_xlabel('Population')  
 	ax.set_ylabel('Profit')  
