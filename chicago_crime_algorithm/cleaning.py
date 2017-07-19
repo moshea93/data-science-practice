@@ -23,9 +23,9 @@ def linear_regression(data):
     y = data.iloc[:,:1]
     reg = linear_model.LinearRegression()
     reg.fit(X, y)
-    
     characteristics = [' '.join(x.split(' ')[2:]) for x in list(data)[1:]]
     impact = reg.coef_[0]
+    print reg.coef_
     for i in range(len(characteristics)):
         print characteristics[i], impact[i]
 
